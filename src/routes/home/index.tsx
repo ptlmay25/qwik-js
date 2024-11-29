@@ -1,13 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import HomePage from "~/components/page_components/homePage";
+import { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+  return <h1 class="text-3xl font-bold underline">Hello World!</h1>;
 });
 
 export const head: DocumentHead = {
